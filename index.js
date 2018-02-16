@@ -17,29 +17,30 @@ var transition = function(event) {
     throw new Error(alert("whaaaah"))
   } else if (changeA !== "" || changeB !== "") {
 
-setTimeout(function() {
-  if (changeA == "color") {
-    changing.style.color = "purple"
-  } else if (changeA == "background") {
-    changing.style.background = "pink"
-  } else if (changeA == "font-style") {
-    changing.style.fontStyle = "oblique"
-  } else if (changeA == "font-weight") {
-    changing.style.fontWeight = "bold"
-  }
-}, 700)
-
     setTimeout(function() {
-      if (changeB == "color") {
-        changing.style.color = "aquamarine"
-      } else if (changeB == "background") {
-        changing.style.background = "chartreuse"
-      } else if (changeB == "font-style") {
-        changing.style.fontStyle = "italic"
-      } else if (changeB == "font-weight") {
-        changing.style.fontWeight = "600"
+      if (changeA == "color") {
+        changing.style.color = "purple"
+      } else if (changeA == "background") {
+        changing.style.background = "pink"
+      } else if (changeA == "font-style") {
+        changing.style.fontStyle = "oblique"
+      } else if (changeA == "font-weight") {
+        changing.style.fontWeight = "bold"
       }
-    }, 1500)
+      setTimeout(function() {
+        if (changeB == "color") {
+          changing.style.color = "aquamarine"
+        } else if (changeB == "background") {
+          changing.style.background = "chartreuse"
+        } else if (changeB == "font-style") {
+          changing.style.fontStyle = "italic"
+        } else if (changeB == "font-weight") {
+          changing.style.fontWeight = "600"
+        }
+      }, 700)
+    }, 700)
+
+
   }
 }
 
